@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>AI Study Assistant 🎓</h1>
+        <p>Your 24/7 college companion for instant answers and conceptual clarity.</p>
+    </div>
+
+    <div class="input-section">
+        <textarea id="question" placeholder="Ask anything... (e.g., What is AI? What is Python?)"></textarea>
+        
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="getAnswer()">Get Answer</button>
+            <button class="btn btn-secondary" onclick="clearAll()">Clear</button>
+        </div>
+    </div>
+
+    <div id="answer-box" class="answer-box hidden">
+        <h3>Response:</h3>
+        <p id="answer"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
